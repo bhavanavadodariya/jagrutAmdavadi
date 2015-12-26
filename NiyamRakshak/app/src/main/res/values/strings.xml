@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">JagrutAmdavadi</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Registration number</string>
+    <string name="stat">Statistics</string>
+    <string name="desc">Would you like to elaborate more?</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Express your citizenship</string>
+    <string name="action_sign_in_short">Log in</string>
+    <string name="error_invalid_email">This registration number is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing registration number
+        completions."
+    </string>
+
+    <string-array name="categories">
+        <item>Traffic</item>
+        <item>Public Transport</item>
+        <item>Clean Ahmedabad</item>
+        <item>Safety</item>
+        <item>Dirty Water</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>
