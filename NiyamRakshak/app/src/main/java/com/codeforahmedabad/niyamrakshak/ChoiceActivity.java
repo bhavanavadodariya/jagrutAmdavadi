@@ -23,7 +23,7 @@ import java.io.ByteArrayOutputStream;
 public class ChoiceActivity extends AppCompatActivity implements View.OnClickListener {
     private final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 1;
 
-    private FloatingActionButton fabMap, fabCam;
+    private FloatingActionButton fabMap, fabCam, fabStat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +33,11 @@ public class ChoiceActivity extends AppCompatActivity implements View.OnClickLis
 
         fabMap = (FloatingActionButton) findViewById(R.id.fabMap);
         fabCam = (FloatingActionButton) findViewById(R.id.fabCam);
+        fabStat = (FloatingActionButton) findViewById(R.id.fabStat);
 
         fabMap.setOnClickListener(this);
         fabCam.setOnClickListener(this);
+        fabStat.setOnClickListener(this);
 
 //        fabMap.setBackgroundTintList(ColorStateList.valueOf(256));
 //        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
@@ -52,7 +54,11 @@ public class ChoiceActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(intentMap);
                 break;
             case R.id.fabCam:
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                Intent intentCam = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intentCam, 1);
+                break;
+            case R.id.fabStat:
+                Intent intent = new Intent(ChoiceActivity.this, StatisticsActivity.class);
                 startActivityForResult(intent, 1);
                 break;
         }

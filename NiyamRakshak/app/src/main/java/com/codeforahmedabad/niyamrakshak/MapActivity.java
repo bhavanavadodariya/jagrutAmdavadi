@@ -84,7 +84,7 @@ public class MapActivity extends AppCompatActivity implements View.OnClickListen
             case R.id.fab:
                 AlertDialog.Builder adb = new AlertDialog.Builder(this);
 //                adb.setView(alertDialogView);
-                adb.setTitle("Traffic");
+                adb.setTitle("Traffic Data");
 //                adb.setIcon(android.R.drawable.ic_dialog_alert);
                 adb.setPositiveButton("Send", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {

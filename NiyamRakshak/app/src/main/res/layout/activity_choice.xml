@@ -1,23 +1,30 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/tools"
+    xmlns:witspirit="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    app:context="com.codeforahmedabad.niyamrakshak.LoginActivity">
+    witspirit:context="com.codeforahmedabad.niyamrakshak.ChoiceActivity">
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabCam"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="20dp"
         android:src="@android:drawable/ic_menu_camera" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabMap"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
         android:src="@android:drawable/ic_menu_myplaces" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabStat"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/ic_menu_view" />
 
 </LinearLayout>
