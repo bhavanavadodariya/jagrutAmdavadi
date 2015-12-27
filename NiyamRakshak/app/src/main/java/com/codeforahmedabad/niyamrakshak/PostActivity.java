@@ -116,7 +116,7 @@ public class PostActivity extends AppCompatActivity implements View.OnClickListe
                     jsonObject.put("description", editText.getText().toString());
                     jsonObject.put("name", "Bhavana");//Logged in User name will be passed
                     jsonObject.put("location", LOC.toString().substring(10, LOC.toString().length()-1));//Geocoding can be applied
-                    jsonObject.put("phonenumber", "1994-BC-0017-0003153");
+                    jsonObject.put("phonenumber", "1990-BC-0014-0000004");
                     jsonObject.put("image", encoded);
                 } catch(JSONException e) {
                     e.printStackTrace();

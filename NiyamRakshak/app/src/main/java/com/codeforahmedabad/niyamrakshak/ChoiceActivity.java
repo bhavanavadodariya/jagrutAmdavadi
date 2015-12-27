@@ -3,6 +3,7 @@ package com.codeforahmedabad.niyamrakshak;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -13,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
@@ -24,6 +26,7 @@ public class ChoiceActivity extends AppCompatActivity implements View.OnClickLis
     private final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 1;
 
     private FloatingActionButton fabMap, fabCam, fabStat;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +42,16 @@ public class ChoiceActivity extends AppCompatActivity implements View.OnClickLis
         fabCam.setOnClickListener(this);
         fabStat.setOnClickListener(this);
 
-//        fabMap.setBackgroundTintList(ColorStateList.valueOf(256));
-//        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-//        Uri uri = Uri.fromParts("package", getPackageName(), null);
-//        intent.setData(uri);
-//        startActivityForResult(intent, 0);
+//        textView = (TextView) findViewById(R.id.textView);
+//        Typeface face1 = Typeface.createFromAsset(getAssets(), "Lohit-Gujarati.ttf");
+//        textView.setTypeface(face1);
+//        textView.setText("જાગ્રત  અમદાવાદી");
+//        textView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                textView.setText(getResources().getString(R.string.app_name));
+//            }
+//        });
     }
 
     @Override
@@ -59,7 +67,7 @@ public class ChoiceActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.fabStat:
                 Intent intent = new Intent(ChoiceActivity.this, StatisticsActivity.class);
-                startActivityForResult(intent, 1);
+                startActivity(intent);
                 break;
         }
     }

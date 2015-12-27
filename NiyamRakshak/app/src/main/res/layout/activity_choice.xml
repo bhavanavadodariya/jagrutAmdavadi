@@ -25,6 +25,19 @@
         android:id="@+id/fabStat"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@android:drawable/ic_menu_view" />
+        android:src="@android:drawable/ic_menu_agenda" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="?android:textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone"
+        android:text="@string/app_name"
+        android:textStyle="bold"/>
 
 </LinearLayout>
